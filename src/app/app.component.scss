@@ -1,0 +1,19 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    header {
+        height: 60px;
+    }
+    
+    main {
+        flex: 1 auto;
+        overflow-x: hidden;
+        padding: 15px;
+    }
+        
+    footer {
+        height: 40px;
+    }
+}

@@ -1,0 +1,15 @@
+:host {
+    .comment-item {
+        position: relative;
+        min-width: 300px;
+        width: 100%;
+        margin-bottom: 12px;
+
+        .delete-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+        }
+    }
+}

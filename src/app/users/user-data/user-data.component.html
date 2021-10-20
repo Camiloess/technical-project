@@ -1,0 +1,23 @@
+<div class="information">
+    <div class="user-buttons" *ngIf="editMode">
+        <img class="me-2" src="assets/img/pencil.svg" height="18" (click)="editUser()">
+    </div>
+    <div>
+        <label class="form-label">Name:</label>
+        <span class="user-data">{{ user?.name }}</span>
+    </div>
+    <div>
+        <label class="form-label">Username:</label>
+        <span class="user-data">{{ user?.username }}</span>
+    </div>
+    <div>
+        <label class="form-label">Email:</label>
+        <span class="user-data">{{ user?.email }}</span>
+    </div>
+    <div>
+        <label class="form-label">Phone:</label>
+        <span class="user-data">{{ user?.phone }}</span>
+    </div>    
+</div>
+
+

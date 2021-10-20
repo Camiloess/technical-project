@@ -1,0 +1,72 @@
+<div class="form-container row">
+    <div class="user-form col-md-6 col-xs-12">
+        <h5>Edit user information</h5>
+        <form [formGroup]="userForm" novalidate>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" formControlName="name" />
+            </div>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" formControlName="username" />
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email" formControlName="email" />
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" class="form-control" id="phone" formControlName="phone" />
+            </div>
+            <div class="mb-3">
+                <label for="website" class="form-label">Website</label>
+                <input type="text" class="form-control" id="website" formControlName="website" />
+            </div>
+            <h4>Address</h4>
+            <div formGroupName="address">
+                <div class="mb-3">
+                    <label for="street" class="form-label">Street</label>
+                    <input type="text" class="form-control" id="street" formControlName="street" />
+                </div>
+                <div class="mb-3">
+                    <label for="suite" class="form-label">Suite</label>
+                    <input type="text" class="form-control" id="suite" formControlName="suite" />
+                </div>
+                <div class="mb-3">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" class="form-control" id="city" formControlName="city" />
+                </div>
+                <div formGroupName="geo">
+                    <div class="mb-3">
+                        <label for="lat" class="form-label">Latitude</label>
+                        <input type="text" class="form-control" id="lat" formControlName="lat" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="lng" class="form-label">Longitude</label>
+                        <input type="text" class="form-control" id="lng" formControlName="lng" />
+                    </div>
+                </div>
+            </div>
+            <h4>Company</h4>
+            <div formGroupName="company">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" formControlName="name" />
+                </div>
+                <div class="mb-3">
+                    <label for="catchPhrase" class="form-label">Catch Phrase</label>
+                    <input type="text" class="form-control" id="catchPhrase" formControlName="catchPhrase" />
+                </div>
+                <div class="mb-3">
+                    <label for="bs" class="form-label">BS</label>
+                    <input type="text" class="form-control" id="bs" formControlName="bs" />
+                </div>
+            </div>
+        </form>
+        <div class="buttons">
+            <button type="button" class="btn btn-info" (click)="saveUser()">Save</button>
+            <button type="button" class="btn btn-primary ms-3" (click)="goBack()">Cancel</button>
+        </div>
+    </div>
+
+</div>

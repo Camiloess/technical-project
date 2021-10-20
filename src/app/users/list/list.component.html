@@ -1,0 +1,25 @@
+<div class="d-flex flex-column p-5">
+  <div class="buttons pb-2">
+    <button type="button" class="d-flex btn btn-primary" (click)="addUser()">Add</button>
+  </div>
+  <table class="table users">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Website</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users; trackBy: trackByUsers" class="user-row" (click)="showUserDetail(user)">
+        <td>{{ user.name }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.website }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

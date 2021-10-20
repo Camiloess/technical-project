@@ -1,0 +1,16 @@
+:host{
+    .users{
+        width: 100%;
+    }
+    .user-row{
+        cursor: pointer;
+    }
+    .user-row:hover {
+        background: #ebedef;
+    }
+    .buttons{
+        align-self: flex-end;
+        align-items: flex-end;
+        display: flex;
+    }
+}

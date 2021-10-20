@@ -24,4 +24,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Application is structured in modules for users, posts and comments. All api calls are made using a service, to initialize data, then it worked locally to maintain the state of the elements when they are updated/removed.
+
+## Wireframes design
+
+There was some changes in the initial wireframe proposal, mainly to have a cleaner UI, for example in the Post View I removed the column with all latest comments because it was a little confusing for the user to have it there.

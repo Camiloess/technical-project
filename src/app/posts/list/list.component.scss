@@ -1,0 +1,11 @@
+:host{
+    .posts{
+        width: 100%;
+    }
+    .post-row{
+        cursor: pointer;
+    }
+    .post-row:hover {
+        background: #ebedef;
+    }
+}

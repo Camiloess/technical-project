@@ -1,0 +1,20 @@
+:host {
+    .information {
+        position: relative;
+
+        .user-buttons {
+            position: absolute;
+            top: 0;
+            right: 2px;
+            
+            img {
+                cursor: pointer;
+            }
+        }
+
+        .user-data {
+            margin-left: 15px;
+            color:   #566573 ;
+        }
+    }
+}

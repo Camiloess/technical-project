@@ -1,0 +1,57 @@
+:host {
+    .detail-content {
+        height: 100%;
+        //overflow-y: scroll;
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            .data {
+                display: flex;
+                flex: 1 1 auto;
+                flex-direction: row;
+                height: 85%;
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    flex: 0 0 45%;
+
+                    .user-info {
+                        display: flex;
+                        flex: 0 0 30%;
+                    }
+                    .post-info {
+                        display: flex;
+                        flex: 0 0 65%;
+
+                        textarea {
+                            min-height: 40%;
+                            resize: none;
+                        }
+                    }
+                }
+
+                .comments {
+                    flex: 1 1 auto;
+                    overflow-y: auto;
+                }
+            }
+
+            .buttons {
+                height: 15%;
+                max-height: 50px;
+                align-self: flex-end;
+                align-items: flex-end;
+                display: flex;
+            }
+        }
+
+        .all-comments {
+            height: 100%;
+            overflow-y: auto;
+        }
+    }
+}
