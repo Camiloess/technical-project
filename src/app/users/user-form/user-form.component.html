@@ -4,67 +4,84 @@
         <form [formGroup]="userForm" novalidate>
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" formControlName="name" />
+                <input type="text" class="form-control" id="name" formControlName="name" 
+                [ngClass]="{ 'is-invalid': getControl.name.touched && getControl.name.invalid }"/>
             </div>
             <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
-                <input type="text" class="form-control" id="username" formControlName="username" />
+                <input type="text" class="form-control" id="username" formControlName="username" 
+                [ngClass]="{ 'is-invalid': getControl.username.touched && getControl.username.invalid }"/>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="text" class="form-control" id="email" formControlName="email" />
+                <input type="text" class="form-control" id="email" formControlName="email" 
+                [ngClass]="{ 'is-invalid': getControl.email.touched && getControl.email.invalid }"/>
             </div>
             <div class="mb-3">
                 <label for="phone" class="form-label">Phone</label>
-                <input type="text" class="form-control" id="phone" formControlName="phone" />
+                <input type="text" class="form-control" id="phone" formControlName="phone" 
+                [ngClass]="{ 'is-invalid': getControl.phone.touched && getControl.phone.invalid }"/>
             </div>
             <div class="mb-3">
                 <label for="website" class="form-label">Website</label>
-                <input type="text" class="form-control" id="website" formControlName="website" />
+                <input type="text" class="form-control" id="website" formControlName="website" 
+                [ngClass]="{ 'is-invalid': getControl.website.touched && getControl.website.invalid }"/>
             </div>
             <h4>Address</h4>
-            <div formGroupName="address">
-                <div class="mb-3">
-                    <label for="street" class="form-label">Street</label>
-                    <input type="text" class="form-control" id="street" formControlName="street" />
-                </div>
-                <div class="mb-3">
-                    <label for="suite" class="form-label">Suite</label>
-                    <input type="text" class="form-control" id="suite" formControlName="suite" />
-                </div>
-                <div class="mb-3">
-                    <label for="city" class="form-label">City</label>
-                    <input type="text" class="form-control" id="city" formControlName="city" />
-                </div>
-                <div formGroupName="geo">
-                    <div class="mb-3">
-                        <label for="lat" class="form-label">Latitude</label>
-                        <input type="text" class="form-control" id="lat" formControlName="lat" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="lng" class="form-label">Longitude</label>
-                        <input type="text" class="form-control" id="lng" formControlName="lng" />
-                    </div>
-                </div>
+            
+            <div class="mb-3">
+                <label for="street" class="form-label">Street</label>
+                <input type="text" class="form-control" id="street" formControlName="street" 
+                [ngClass]="{ 'is-invalid': getControl.street.touched && getControl.street.invalid }"/>
             </div>
+            <div class="mb-3">
+                <label for="suite" class="form-label">Suite</label>
+                <input type="text" class="form-control" id="suite" formControlName="suite" 
+                [ngClass]="{ 'is-invalid': getControl.suite.touched && getControl.suite.invalid }"/>
+            </div>
+            <div class="mb-3">
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control" id="city" formControlName="city" 
+                [ngClass]="{ 'is-invalid': getControl.city.touched && getControl.city.invalid }"/>
+            </div>
+            <div class="mb-3">
+                <label for="zipcode" class="form-label">Zipcode</label>
+                <input type="text" class="form-control" id="zipcode" formControlName="zipcode" 
+                [ngClass]="{ 'is-invalid': getControl.zipcode.touched && getControl.zipcode.invalid }"/>
+            </div>
+            <div class="mb-3">
+                <label for="lat" class="form-label">Latitude</label>
+                <input type="text" class="form-control" id="lat" formControlName="lat" 
+                [ngClass]="{ 'is-invalid': getControl.lat.touched && getControl.lat.invalid }"/>
+            </div>
+            <div class="mb-3">
+                <label for="lng" class="form-label">Longitude</label>
+                <input type="text" class="form-control" id="lng" formControlName="lng" 
+                [ngClass]="{ 'is-invalid': getControl.lng.touched && getControl.lng.invalid }"/>
+            </div>
+            
             <h4>Company</h4>
-            <div formGroupName="company">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" formControlName="name" />
-                </div>
-                <div class="mb-3">
-                    <label for="catchPhrase" class="form-label">Catch Phrase</label>
-                    <input type="text" class="form-control" id="catchPhrase" formControlName="catchPhrase" />
-                </div>
-                <div class="mb-3">
-                    <label for="bs" class="form-label">BS</label>
-                    <input type="text" class="form-control" id="bs" formControlName="bs" />
-                </div>
+            
+            <div class="mb-3">
+                <label for="companyName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="companyName" formControlName="companyName" 
+                [ngClass]="{ 'is-invalid': getControl.companyName.touched && getControl.companyName.invalid }"/>
             </div>
+            <div class="mb-3">
+                <label for="catchPhrase" class="form-label">Catch Phrase</label>
+                <input type="text" class="form-control" id="catchPhrase" formControlName="catchPhrase" 
+                [ngClass]="{ 'is-invalid': getControl.catchPhrase.touched && getControl.catchPhrase.invalid }"/>
+            </div>
+            <div class="mb-3">
+                <label for="bs" class="form-label">BS</label>
+                <input type="text" class="form-control" id="bs" formControlName="bs" 
+                [ngClass]="{ 'is-invalid': getControl.bs.touched && getControl.bs.invalid }"/>
+            </div>
+            
         </form>
+        
         <div class="buttons">
-            <button type="button" class="btn btn-info" (click)="saveUser()">Save</button>
+            <button type="button" class="btn btn-info" (click)="saveUser()" [disabled]="userForm.invalid">Save</button>
             <button type="button" class="btn btn-primary ms-3" (click)="goBack()">Cancel</button>
         </div>
     </div>

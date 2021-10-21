@@ -19,7 +19,6 @@ export class ListComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     this.users = await this.apiService.getUsers();
-    console.log('this.users', this.users);
   }
 
   trackByUsers(index, item): number {
